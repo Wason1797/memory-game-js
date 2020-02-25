@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Memory Game</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Memory Game</h1>
+    </header>
+    <section class="container" id="game-space">
+      <template id="game-tile-template">
+        <img src="{{imgPath}}" alt="Tile not found" class="game-tile" />
+      </template>
+    </section>
+
+    <section class="container">
+      <h2>Score: </h2>
+      <h2 id="score" style="margin-left: 10px;">0</h2>
+    </section>
+
+    <br />
+    <footer>
+      Iconos diseñados por
+      <a href="https://www.flaticon.es/autores/freepik" title="Freepik">
+        Freepik
+      </a>
+      from
+      <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.js"
+      integrity="sha256-rP/7cD6sF9Rey5N+nwEgClCdovR+NIuUxWMkyqak9vU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/memory.js"></script>
+  </body>
+</html>
